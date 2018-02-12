@@ -1,10 +1,325 @@
 ---
-title: Le Wagon Middleman boilerplate
+title: Welcome to Ôm
 ---
 
-<div class="welcome text-center padded">
-  <h1>You're <a href="https://www.lewagon.com">Le Wagon</a>'s boilerplate!</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+<div id="banner" class="smooth-scrollable text-center ">
+
+    <h1 class="text-center hatch">Ôm</h1>
+
+    <p class="text-center hatch" id="content-banner">Le buddha bowl 100% bien être</p>
+                            
+                                  <div class="spacer"></div>
+                                  <div class="spacer"></div> 
+                                  
+
+              <a href="#Les-menus" class="btn btn-medium hatch"> Découvrez notre menu !</a>
+   
+
+     <a href="#description"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
+</div>
+         
+    <!-- ***************** fin 1ère division *********************-->
+ 
+
+
+<div class="bg-gray little-padded " id="description">
+    
+       <h2 class="text-center "> <strong> Comment compose-t-on nos buddha bowl ?  </strong></h2>
+      <div id="underlined-title" class="center-block"> </div>
+
+  <div class="container text-center" id="1erdiv-composition">
+          
+          
+         
+
+        
+        
+   
+    <div class="row">              
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="card" data-sr="enter bottom and scale up 20% over 1s">
+              
+               <%= image_tag "paper.svg",  class:' img-popover', data:  { content: "<div class:'popover'> <img src='http://placehold.it/100x100' class='img-circle img-responsive center-block'> <h4> Nos choix de sauces </h4> <ul> <li>Sauce 1</li> <li>Sauce 2</li> <li> Sauce 3 </li> <li> Sauce 4 </li> </ul> </div> "}   %> 
+              
+            <h3>De superbes sauces au choix</h3>
+            <p> Sauce basilic, tartare, poivre ... et plein d'autres  <strong>hmmm, on se régale</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="card" data-sr="enter bottom and scale up 20% over 1.5s">
+            <%= image_tag "computer.svg" %>
+            <h3>Des noix et des graines</h3>
+            <p>et en plus, elles sont de la région !</strong></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="card" data-sr="enter bottom and scale up 20% over 2s">
+            <%= image_tag "analytics.svg" %>
+            <h3>Des légumes</h3>
+            <p> Des carottes, des choux, de la salade, aubergines ... c'est vous qui décidez !</p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <div class="card" data-sr="enter bottom and scale up 20% over 2.5s">
+            <%= image_tag "data.svg" %>
+            <h3>Des légumineuses</h3>
+            <p> Et oui, Lentille, boulgoures, quinoa, là aussi c'est vous qui décidez ! </strong></p>
+          </div>
+
+        </div>
+         <div class="col-xs-12 col-sm-12 col-md-12">
+          <div class="card" data-sr="enter bottom and scale up 20% over 2.5s">
+            <%= image_tag "data.svg" %>
+            <h3>Des Céréales !</h3>
+            <p> Et là, enfin, vous l'avez ... oooh que oui vous l'avez votre repas complet, équilibré, biocool, et tout ça à partir de 9 euros ! </strong></p>
+          </div>
+        </div>
+            
+    </div>
+  </div>
+
+  <a href="#Les-menus"><i class="fa fa-angle-down fa-6 pulse scroll-btn"></i></a>
+</div>
+     
+
+                          <!-- ***********************Les Menus **************-->
+
+
+
+<div id="Les-menus" class="bg-success little-padded">
+  <strong> <h2 class="text-center">Les menus</h2></strong>
+      <div id="underlined-title" class="center-block"> </div>
+  
+          <div id="products" >
+
+                 <div class="container">
+                  <div class="row">
+                        <% data.products.each do | product |  %>
+                           
+                            <div class="col-xs-12 col-sm-4">
+                                
+                                  <button id="menu-description" type="button"  data-toggle="modal" data-target="#OrderForm" >
+                                    <%= image_tag product.image_file %>
+                                    
+                                    <div id="menu-middle">
+                                     <h4 class="text-left"> <%= product.name %> </h4>
+                                     <p class="text-justify"> <%= product.content %> </p> 
+                                    </div>
+                                    <div id="menu-bottom">
+                                      <%= image_tag product.iconepicture %>
+                                      <ul class="list-inline">
+                                        <li class="prix-menu1"> <%= product.price1 %> </li>
+                                        <li class="prix-menu2"> <%= product.price2 %></li>
+                                      </ul>
+                                    </div> 
+                                  </button> 
+
+                                   
+                             </div>
+                             
+                        <% end %>
+                  </div>
+                </div>
+
+          </div>  
+  
+</div>
+
+
+                            <!-- ***********************Testimonials **************-->
+
+
+<div id="testimonial" class="padded">
+    <div class="container">
+      <div class="row">
+        
+              <% data.testimonials.each do | testimonial | %>
+                <div class="col-xs-12 col-sm-6"> 
+                    <div  class="text-center testimonial">
+                        <%= image_tag testimonial.image_file, class:"img-circle" %>
+                        <h3> <%= testimonial.name %> </h3>
+                        <p> <%= testimonial.content %> </p>
+                    </div>
+                </div>      
+              <% end %>
+       
+      </div>
+    </div>
+
+</div>
+
+
+                            <!-- *********************** Google Map **************-->
+
+
+
+
+
+<div id="map" style="width: 100%;" class="smooth-scrollable "></div>
+
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+
+<script type="text/javascript">
+var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+var myOptions = {
+  zoom: 16,
+  center: myLatlng,
+  scrollwheel: false,
+  mapTypeId: google.maps.MapTypeId.ROADMAP,
+  styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
+};
+
+var map = new google.maps.Map(document.getElementById('map'), myOptions);
+var marker = new google.maps.Marker({
+  position: myLatlng,
+  map: map,
+  title:"You are here!"
+});
+</script>
+
+<script>
+$(function() {
+  // Smooth scroll
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+
+  // Scroll reveal
+  window.sr = new scrollReveal();
+
+});
+</script>
+
+
+
+<!-- *******************Sign-up Modal 1 : bowl et une soupe********************* -->
+<div class="modal fade" id="OrderForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h2 class="modal-title" id="myModalLabel"> Commandez directement ici </h2>
+      </div>
+      <div class="modal-body">
+        <form action="">
+
+          <div class="row">
+                 <%= image_tag "http://placehold.it/400x400", class:"col-xs-5 image-modal" %>
+
+                 <div class="col-xs-7" id="modal-content">
+                   
+                   <h3 class="text-center">Un Bowl et une Boisson</h3>
+                   <div id="underlined-title" class="center-block"> </div>
+                   <strong><h4 class="col-xs-12">Description</h4></strong>
+                   <p class="col-xs-12"> Un bowl à composer vous même avec une boisson maison au choix.</p>
+   
+                   
+
+                    <!-- code HTML -->
+                   <strong><h4 class="col-xs-12">Composez votre menu</h4></strong>
+
+                    <% data.listmenucontents.each do | list | %>
+
+
+                      <div class="col-xs-6"> 
+                          
+                              <div id="englobe-list" >  
+                                <div  class="list-menucontent" style= "">
+                                 
+                                               <label for="le_nom"> <%= list.name %> </label> <br />
+
+                                               <p>
+                                                  <select class="selectpicker" >
+                                                     <option value="ta_valeur" ><%= list.option1 %> </option>
+                                                     <option value="ta_valeur"><%= list.option2 %> </option>
+                                                     <option value="ta_valeur"><%= list.option3 %> </option>
+                                                     <option value="ta_valeur"><%= list.option4 %> </option>
+                                                     <option value="ta_valeur"><%= list.option5 %> </option>
+                                                      <option value="ta_valeur"><%= list.option6 %> </option>
+                                                  </select>
+                                               </p>
+                                </div>
+                              </div>
+                      </div>      
+                    <% end %>
+               
+               
+                     <h4 class="col-xs-12">Votre boisson</h4>
+
+                     <% data.boissons.each do | boisson | %>
+                      <div class="col-xs-12">     
+
+                       
+                          <div>
+                           
+                                     <label for="le_nom"> <%= boisson.name %> </label> <br />
+
+                                     <p>
+                                         <select   class="selectpicker"   >
+                                           <option value="ta_valeur"><%= boisson.option1 %>  </option>
+                                           <option value="ta_valeur"><%= boisson.option2 %> </option>
+                                           <option value="ta_valeur"><%= boisson.option3 %> </option>
+                                           <option value="ta_valeur"><%= boisson.option4 %> </option>
+                                           <option value="ta_valeur"><%= boisson.option5 %> </option>
+                                         </select>
+                                    </p>
+
+                          </div>
+                      </div>      
+
+                    <% end %>
+                    
+                    
+                     <h4 class="col-xs-12">Votre soupe</h4>
+
+                     <% data.soupes.each do | soupe | %>
+                      <div class="col-xs-12">     
+
+                       
+                          <div>
+                           
+                                     <label for="le_nom"> <%= soupe.name %> </label> <br />
+
+                                     <p>
+                                         <select   class="selectpicker"   >
+                                           <option value="ta_valeur"><%= soupe.option1 %>  </option>
+                                           <option value="ta_valeur"><%= soupe.option2 %> </option>
+                                           <option value="ta_valeur"><%= soupe.option3 %> </option>
+                                           <option value="ta_valeur"><%= soupe.option4 %> </option>
+                                           <option value="ta_valeur"><%= soupe.option5 %> </option>
+                                         </select>
+                                    </p>
+
+                          </div>
+                      </div>      
+
+                    <% end %>
+
+                      <a href="#">   <input type="submit" value="Commandez" class="btn btn-warning col-xs-12" style="margin-top: 30px;"></a> 
+
+              </div>
+          </div>   
+                
+        </form>
+        
+        <!-- Your signup form -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
