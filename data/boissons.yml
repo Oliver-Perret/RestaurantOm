@@ -1,0 +1,7 @@
+- name: Boisson
+  option1: Au choix
+  option2: boisson 1
+  option3: boisson 2
+  option4: boisson 3
+  option5: boisson 4
+  option6: boisson 5

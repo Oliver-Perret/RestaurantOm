@@ -1,0 +1,46 @@
+- name: Sauce
+  option1: Au choix
+  option2: sauce cacahuète 
+  option3: sauce crème
+  option4: Sauce ultra bon
+  option5: Sauce de ouf
+
+- name: Légume
+  option1: Au choix
+  option2: Assortiement de saison
+  option3: Carotte et brocoli
+  option4: salade
+  option5: épinard
+
+
+
+- name: Légumineuse
+  option1: Au choix
+  option2: boulgroure
+  option3: Lentille
+  option4: Quinoa
+  option5: riz
+
+
+- name: Noix et graines
+  option1: Au choix
+  option2: Noix de <br> Lyon
+  option3: graines germés 1
+  option4: graines germés 2
+  option5: graines germés 3
+
+
+- name: Céréal
+  option1: Au choix
+  option2: haricot
+  option3: 
+  option4: Sauce ultra bon
+  option5: Sauce de ouf
+
+
+
+
+
+
+
+

@@ -1,4 +1,24 @@
-- name: Some product
-  image: some_product.png
-- name: Other product
-  image: other_product.png
+- name: Un bowl et une boisson
+  content: Un menu simple, beaucoup de fun et d'amour 
+  image_file: test-image-menu.png
+  price1: 9 €
+  price2: 10 €
+  iconepicture: icone-menudescription-group.png 
+- name: Un bowl et une soupe
+  content: Un menu parfait pour l'hiver 
+  image_file: test-image-menu.png
+  price1: 9 €
+  price2: 10 €
+  iconepicture: icone-menudescription-group.png 
+- name: Un bowl, une soupe et une boisson
+  content: Un menu complet, équilibré, et sain. Enfin.
+  image_file: test-image-menu.png
+  price1: 9 €
+  price2: 10 €
+  iconepicture: icone-menudescription-group.png
+- name: Un bowl, une soupe et une boisson
+  content: Un menu complet, équilibré, et sain. Enfin.
+  image_file: test-image-menu.png
+  price1: 9 €
+  price2: 10 €
+  iconepicture: icone-menudescription-group.png
