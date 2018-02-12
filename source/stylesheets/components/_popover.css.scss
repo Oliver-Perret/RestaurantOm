@@ -1,0 +1,38 @@
+
+
+a, a:hover {
+  color: #4b4b4b;
+}
+
+.track {
+  max-width: 600px;
+  margin: 0 auto;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 10px 5px 15px 5px;
+}
+.track:hover{
+  background: #FAFAFA;
+}
+.track img {
+  margin-top: 10px;
+}
+
+.popover {
+  
+  width: 350px;
+  padding: 10px 10px;
+  color: black;
+  border-color: $test;
+
+    h4 {
+      text-align: center;
+      color: black;
+    }
+
+    li {
+
+      font-family: $open-sans;
+
+    }
+
+}
