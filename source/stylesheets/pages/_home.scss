@@ -1,0 +1,180 @@
+#banner {
+  background-image: image-url('background_image.JPG');
+  color: white;
+  padding: 150px 0;
+  background-size: cover;
+  height: 650px;
+  padding-left: 50px;
+
+  h1 {
+    font-size: 150px;
+    color: white;
+    font-family: $brandon-light;
+  }
+  p {
+    font-size: 50px;
+    font-weight: 100;
+  }
+}
+.card{
+
+  padding: 10px;
+  font-weight: 300;
+  h2{
+    font-size: 22px;
+  }
+}
+
+#banner, #description, #newsletter {
+  position: relative;
+}
+
+
+
+
+
+.scroll-btn{
+  position: absolute;
+  width: 100px;
+  margin-left: -50px;
+  bottom: 20px;
+  left: 50%;
+  text-align: center;
+  font-size: 60px;
+  color: white;
+  &:hover{
+    color: white;
+  }
+}
+
+#underlined-title
+{
+  width: 150px;
+  border-bottom: solid 1px $test; 
+
+}
+
+h2 {
+  margin-top: 0.5em;
+  text-transform: upcase;
+  font-size: 40px;
+  font-family: $brandon-light;
+  letter-spacing: 3px;
+  
+}
+
+h3 {
+  font-size: 30px;
+  font-family: $brandon-light;
+
+}
+
+
+
+
+
+#underlined-title
+{
+
+}
+
+h2 {
+  margin-top: 0.5em;
+  font-size: 40px;
+  letter-spacing: 3px;
+  
+}
+
+
+#menu-description {
+  background: white;
+  
+  margin-top: 30px;
+  border: 2px solid rgba(128,0,0, 0.4);
+  border-radius: 1%;
+  box-shadow: 4px 2px 2px #cddcc7;
+} 
+
+
+
+#menu-description:hover {
+  border: 2px solid $test;
+} 
+
+#menu-description > img{
+
+  opacity: 0.5;
+  width: 286px; 
+  margin: none;
+  padding: none;
+} 
+
+#menu-description:hover > img{
+
+  opacity: 1;
+  width: 286px; 
+} 
+
+#menu-description:hover > #menu-bottom
+{
+
+   border-top: 2px solid $test;
+} 
+
+
+
+#menu-middle {
+  font-size: 12px;
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 4px;  
+  
+
+  h4 {
+  font-size: 18px;
+  font-family: $brandon-light;
+}
+}
+
+
+#menu-bottom
+{
+  border: 2px solid white; 
+  margin-left: 8px;
+  margin-right: 8px;
+  margin-top: 2px;
+  border-top: 2px solid rgba(128,0,0, 0.4);
+
+  .prix-menu1{
+  margin-left: 1%;
+
+  }
+  .prix-menu2{
+
+  margin-left: 23%;
+  
+  }
+
+img{
+  margin-bottom: 6px;
+  margin-top: 6px;
+  margin-left:1%;
+  }
+}
+
+
+
+
+.testimonial {
+ 
+background: white;
+padding: 40px;
+margin: 10px;
+box-shadow: 1px 1px 3px #bdbaba;
+
+img{
+  width: 40%;
+  margin: 0 auto;
+}
+
+}
