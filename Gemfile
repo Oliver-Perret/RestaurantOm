@@ -26,3 +26,4 @@ gem 'font-awesome-sass'
 gem 'sass-globbing'
 ## Middleman sprockets
 gem 'middleman-sprockets'
+
