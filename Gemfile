@@ -27,3 +27,4 @@ gem 'sass-globbing'
 ## Middleman sprockets
 gem 'middleman-sprockets'
 
+gem 'middleman-deploy', '~> 1.0'
